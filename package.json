@@ -12,6 +12,7 @@
     "should": "^7.1.1"
   },
   "scripts": {
+  	"lint": "jshint *.js",
   	"test": "mocha **/*spec.js",
   	"test:watch": "npm run test -- -w"
   }
