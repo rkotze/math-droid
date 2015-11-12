@@ -18,6 +18,14 @@ describe('Prime number', function(){
 		(prime.check(103)).should.be.true();
 	});
 
+	it('should not be 0', function(){
+		(prime.check(0)).should.be.false();
+	});
+
+	it('should not be 1', function(){
+		(prime.check(1)).should.be.false();
+	});
+
 	it('should not be 4', function(){
 		(prime.check(4)).should.be.false();
 	});
