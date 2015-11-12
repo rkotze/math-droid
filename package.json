@@ -1,0 +1,18 @@
+{
+  "name": "math-droid",
+  "description": "",
+  "verison": "0.0.1",
+  "author": "Richard Kotze",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {},
+  "devDependencies": {
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.3",
+    "should": "^7.1.1"
+  },
+  "scripts": {
+  	"test": "mocha **/*spec.js",
+  	"test:watch": "npm run test -- -w"
+  }
+}
