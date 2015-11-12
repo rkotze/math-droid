@@ -15,5 +15,9 @@
     "lint": "jshint *.js",
     "test": "mocha **/*spec.js",
     "test:watch": "npm run test -- -w"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "mathdroid": "index.js"
   }
 }
