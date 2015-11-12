@@ -1,7 +1,7 @@
 {
   "name": "math-droid",
   "description": "",
-  "verison": "0.0.1",
+  "version": "0.0.2",
   "author": "Richard Kotze",
   "license": "MIT",
   "private": false,
@@ -15,6 +15,5 @@
     "lint": "jshint *.js",
     "test": "mocha **/*spec.js",
     "test:watch": "npm run test -- -w"
-  },
-  "version": "0.0.2"
+  }
 }
