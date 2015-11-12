@@ -12,8 +12,9 @@
     "should": "^7.1.1"
   },
   "scripts": {
-  	"lint": "jshint *.js",
-  	"test": "mocha **/*spec.js",
-  	"test:watch": "npm run test -- -w"
-  }
+    "lint": "jshint *.js",
+    "test": "mocha **/*spec.js",
+    "test:watch": "npm run test -- -w"
+  },
+  "version": "0.0.2"
 }
