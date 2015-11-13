@@ -7,6 +7,6 @@ describe('User commands', function(){
 	});
 
 	it('run user command', function(){
-		commands.run(['isprime', 2]).should.be.eql('yes');
+		commands.run(['isprime', 2]).should.be.eql('Yes');
 	});
 });
