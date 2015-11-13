@@ -26,5 +26,25 @@ module.exports = {
 			n++;
 		}
 		return primes;
+	},
+
+	listIn: function(maxValue){
+		var primes = [],
+		sieve = new Array(maxValue);
+
+		for (var i = 1; i <= maxValue; i++) {
+			sieve[i] = true;
+		};
+
+		for (var p = 2; p <= maxValue; p++) {
+			if( sieve[p] ){
+				primes.push(p);
+				for (var t = p * 2; t <= maxValue; t += p) {
+					sieve[t] = false;
+				};
+			}
+		}
+
+		return primes;
 	}
 };
