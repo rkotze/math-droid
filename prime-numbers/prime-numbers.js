@@ -15,7 +15,16 @@ module.exports = {
 		return true;
 	},
 	
-	list: function(primes){
-		return [2,3,5,7,11];
+	listFirst: function(nthPrimes){
+		var primes = [],
+		n = 2;
+		while(nthPrimes > 0){
+			if(this.check(n)){
+				primes.push(n);
+				nthPrimes--;
+			}
+			n++;
+		}
+		return primes;
 	}
 };
