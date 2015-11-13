@@ -1,4 +1,3 @@
-
 module.exports = {
 	check: function(prime){
 		if(prime < 2)

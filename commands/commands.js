@@ -1,4 +1,3 @@
-'use strict';
 var prime = require('../prime-numbers/prime-numbers');
 var commands = {
 	'isprime': function(value){
