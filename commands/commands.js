@@ -5,6 +5,10 @@ var commands = {
 			return 'Yes';
 
 		return 'No';
+	},
+	
+	'listnprimes': function(value){
+		return prime.listFirst(value).join(', ');
 	}
 };
 
