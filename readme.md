@@ -4,7 +4,9 @@
 
 **Commands**
 
-- `mathdroid isprime [number]`
+- `mathdroid isprime [number]` check if number is prime
+- `mathdroid listnprime [number]` get a list of n prime numbers
+- `mathdroid listprimesin [number]` get a list of prime numbers less than n
 
 ### Dev
 

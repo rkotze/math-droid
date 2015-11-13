@@ -43,7 +43,7 @@ module.exports = {
 					sieve[t] = false;
 				};
 			}
-		}
+		};
 
 		return primes;
 	}
