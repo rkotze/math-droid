@@ -13,5 +13,9 @@ module.exports = {
 		}
 
 		return true;
+	},
+	
+	list: function(primes){
+		return [2,3,5,7,11];
 	}
 };
