@@ -5,9 +5,9 @@
 **Commands**
 
 - `mathdroid isprime [number]` check if number is prime
-- `mathdroid listnprime [number]` get a list of n prime numbers
+- `mathdroid listnprimes [number]` get a list of n prime numbers
 - `mathdroid listprimesin [number]` get a list of prime numbers less than n
 
 ### Dev
 
-- Run tests: `npm run tests`
+- Run tests: `npm run test`
