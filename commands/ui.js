@@ -1,4 +1,6 @@
-var prime = require('../prime-numbers/prime-numbers');
+var prime = require('../prime-numbers/prime-numbers'),
+fib = require('../fibonacci/fibonacci');
+
 module.exports = {
 	'isprime': function(value){
 		if(prime.check(value))
@@ -13,5 +15,9 @@ module.exports = {
 
 	'listprimesin': function(max){
 		return prime.listIn(max).join(', ');
+	},
+
+	'fibsequence': function(value) {
+		return fib(value).join(', ');
 	}
 };

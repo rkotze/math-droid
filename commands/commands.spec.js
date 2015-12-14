@@ -18,4 +18,8 @@ describe('User commands', function(){
 		commands.run(['listprimesin', 13]).should.be.eql('2, 3, 5, 7, 11, 13');
 	});
 
+	it('run user command `fibsequence` 5', function(){
+		commands.run(['fibsequence', 5]).should.be.eql('1, 1, 2, 3, 5');
+	});
+
 });
