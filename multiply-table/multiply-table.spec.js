@@ -19,4 +19,8 @@ describe('Draw a multiplication table', function(){
 			"4  |4  |8  |12 |16 |20 |\n",
 			"5  |5  |10 |15 |20 |25 |\n"].join(""));
 	});
+
+	it('should give max field size of 2', function(){
+		table.fieldSize([1,2,3,4,5]).should.eql(2);
+	});
 });
