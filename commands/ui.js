@@ -1,5 +1,6 @@
 var prime = require('../prime-numbers/prime-numbers'),
-fib = require('../fibonacci/fibonacci');
+fib = require('../fibonacci/fibonacci'),
+table = require('../multiply-table/multiply-table');
 
 module.exports = {
 	'isprime': function(value){
@@ -19,5 +20,13 @@ module.exports = {
 
 	'fibsequence': function(value) {
 		return fib(value).join(', ');
+	},
+
+	'tablenprimes': function(value) {
+		return table.draw(prime.listFirst(value));
+	},
+
+	'tablefibsequence': function(value){
+		return table.draw(fib(value));
 	}
 };
