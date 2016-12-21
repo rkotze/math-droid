@@ -10,7 +10,7 @@ module.exports = function(){
 		colArr.push("|\n");
 		return colArr;
 	},
-	drawFields = function(numberArr, cb) {
+	drawFields = function(numberArr) {
 		var rowArr = [];
 		for (var i = 0; i < numberArr.length; i++) {
 			rowArr.push(fieldPadding(numberArr[i]));
