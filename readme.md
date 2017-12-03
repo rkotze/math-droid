@@ -16,5 +16,5 @@
 
 ### Dev
 
-- Run tests: `npm run test`
+- Run tests: `npm test`
 - Run watch tests: `npm run test:watch`
