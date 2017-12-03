@@ -1,8 +1,8 @@
 var should = require('should'),
 table = require('./multiply-table');
 
-describe('Draw a multiplication table', function(){
-	it('should draw a 3 by 3 table', function(){
+describe('Draw a custom table', function(){
+	it('multiply the values in a 3 by 3 table', function(){
 		table.draw([1,2,3]).should.eql(
 			["  |1 |2 |3 |\n",
 			"1 |1 |2 |3 |\n",
@@ -10,7 +10,7 @@ describe('Draw a multiplication table', function(){
 			"3 |3 |6 |9 |\n"].join(""));
 	});
 
-	it('should draw a 5 by 5 table', function(){
+	it('multiply the values in a 5 by 5 table', function(){
 		table.draw([1,2,3,4,5]).should.eql(
 			["   |1  |2  |3  |4  |5  |\n",
 			"1  |1  |2  |3  |4  |5  |\n",
@@ -20,7 +20,12 @@ describe('Draw a multiplication table', function(){
 			"5  |5  |10 |15 |20 |25 |\n"].join(""));
 	});
 
-	it('should give max field size of 2', function(){
-		table.fieldSize([1,2,3,4,5]).should.eql(2);
+	it('sum the values to draw a table 3 by 3', function(){
+		table.sumDraw([1,2,3]).should.eql(
+			["  |1 |2 |3 |\n",
+			"1 |2 |3 |4 |\n",
+			"2 |3 |4 |5 |\n",
+			"3 |4 |5 |6 |\n"].join(""));
 	});
+
 });
